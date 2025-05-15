@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade & Cross</title>
+    <link rel="stylesheet" href="fade_and_cross.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fade & Cross</h1>
+        
+        <!-- Add player setup section -->
+        <div id="player-setup" class="player-setup">
+            <div class="setup-inputs">
+                <div class="input-group">
+                    <label for="player1-name">Player 1 (✕):</label>
+                    <input type="text" id="player1-name" placeholder="Enter name" value="Kabir">
+                </div>
+                <div class="input-group">
+                    <label for="player2-name">Player 2 (○):</label>
+                    <input type="text" id="player2-name" placeholder="Enter name" value="Aryan">
+                </div>
+            </div>
+            <button id="start-game">Start Game</button>
+        </div>
+
+        <div id="game-container" class="game-container" style="display: none;">
+            <div class="game-info">
+                <div class="player-info">
+                    <div id="player1" class="player active">
+                        <span class="player-name">Kabir</span>
+                        <span class="player-symbol">✕</span>
+                    </div>
+                    <div id="player2" class="player">
+                        <span class="player-name">Aryan</span>
+                        <span class="player-symbol">○</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="game-board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+
+            <button id="reset-game">New Game</button>
+        </div>
+    </div>
+    <script src="fade_and_cross.js"></script>
+</body>
+</html> 
